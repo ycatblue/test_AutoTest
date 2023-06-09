@@ -1,2 +1,1 @@
-# test_DVAdmin
-学习自动化测试
+Python+PyTest实现接口自动化测试
