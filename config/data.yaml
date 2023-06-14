@@ -1,0 +1,37 @@
+hero:
+  name: 安琪拉
+  attribute: 法师
+  Hp: 445.5
+
+# hero_name: {name: 安琪拉, attribute: 法师, Hp: 445.5}
+
+heroes_name:
+  - 安琪拉
+  - 廉颇
+  - 鲁班七号
+
+heroes:
+  - name: 廉颇
+    attribute: 战士
+
+heroes_name_list:
+  - - 安琪拉
+    - 廉颇
+    - 鲁班七号
+
+test:
+  - name: openApi
+    columns:
+      - name: test082705
+        type: NUMBER
+        format:
+          decimal_place: 0
+          num2words: true
+          currency: £
+          duration:
+        values:
+
+      - name2: test082704
+        type: DATE
+        format: dd_mm_yy
+        values:
