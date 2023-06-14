@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2023/6/14
 # @Author   : ycat
-# @File     : read_data.py
+# @File     : read_data_test.py
+import os
 import yaml
 
-f = open("../config/data.yaml", encoding="utf-8")
-data = yaml.safe_load(f)
-print(data['hero'])
-print(data['heroes'])
-print(data['heroes_name'])
-print(data['heroes_name_list'])
-print(data['test'])
-print(data['test']['name'])
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "config", "data.yaml")
+
+
+def read_data():
+    f = open(path, encoding="utf-8")
+    data = yaml.safe_load(f)
+    return data
+
+
+get_data = read_data()

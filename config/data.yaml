@@ -1,3 +1,8 @@
+person:
+  name: random_name()
+  age: 18
+  sex: woman
+
 hero:
   name: 安琪拉
   attribute: 法师
@@ -35,3 +40,19 @@ test:
         type: DATE
         format: dd_mm_yy
         values:
+
+heroes_name_attribute:
+  - - 廉颇
+    - 战士
+  - - 安琪拉
+    - 法师
+
+mobile_belong: {shouji: 13456755448, appkey: 0c818521d38759e1}
+mobile_belong_post:
+  # 手机号，appkey
+  - [ 13456755448, 0c818521d38759e1 ]
+
+mobile_belong_get:
+  # 手机号，appkey
+  - [ 13456755448, 0c818521d38759e1 ]
+  - [ 13400000000, 0c818521d38759e1 ]
