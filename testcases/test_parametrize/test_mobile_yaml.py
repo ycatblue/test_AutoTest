@@ -5,12 +5,14 @@
 import pytest
 import requests
 from utils.read_data import get_data
+from utils.read_ini import read_ini
+url = read_ini()['host']['api_sit_url']
 
 
 @pytest.mark.parametrize('mobile, appkey', get_data['mobile_belong_get'])
 def test_mobile(mobile, appkey):
     print("测试手机号归属地get请求")
-    r = requests.get("http://api.binstd.com/shouji/query",
+    r = requests.get(url+"/shouji/query",
                      params={"shouji": mobile, "appkey": appkey})
     # print(r.status_code)
     assert r.status_code == 200

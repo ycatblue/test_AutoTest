@@ -4,7 +4,7 @@
 # @File     : read_data_test.py
 import yaml
 
-f = open("../config/data.yaml", encoding="utf-8")
+f = open("../data/data.yaml", encoding="utf-8")
 data = yaml.safe_load(f)
 # print(data['hero'])
 # print(data['heroes'])
