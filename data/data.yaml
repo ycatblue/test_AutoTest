@@ -68,3 +68,5 @@ mobile_belong_get:
   - [ 13400000000, 0c818521d38759e1 ]
 
 json_data: {title: foo, body: bar, userId: 1}
+
+test_register: { mobile: 13066807785 }

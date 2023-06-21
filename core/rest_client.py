@@ -10,13 +10,13 @@ from utils.log_util import logger
 from utils.read import base_data
 
 api_root_url = base_data.read_ini()['host']['api_sit_url']
-post_url = base_data.read_ini()['host']['post_url']
+# post_url = base_data.read_ini()['host']['post_url']
 
 
 class RestClient:
     def __init__(self):
         self.api_root_url = api_root_url
-        self.post_url = post_url
+        # self.post_url = post_url
 
     def get(self, url, **kwargs):
         return self.request(url, "GET", **kwargs)
@@ -35,18 +35,18 @@ class RestClient:
         if method == "GET":
             return requests.get(self.api_root_url + url, **kwargs)
         elif method == "POST":
-            return requests.get(self.post_url + url, **kwargs)
+            return requests.post(self.api_root_url + url, **kwargs)
         elif method == "PUT":
-            return requests.get(self.post_url + url, **kwargs)
+            return requests.put(self.api_root_url + url, **kwargs)
         elif method == "DELETE":
-            return requests.get(self.post_url + url, **kwargs)
+            return requests.delete(self.api_root_url + url, **kwargs)
 
     def request_log(self, url, method, **kwargs):
         data = dict(**kwargs).get('data')
         json_data = dict(**kwargs).get('json')
         params = dict(**kwargs).get('params')
         headers = dict(**kwargs).get('headers')
-        logger.info("接口请求的地址>>>\n{}".format(self.post_url + url))
+        logger.info("接口请求的地址>>>\n{}".format(self.api_root_url + url))
         logger.info("接口请求的方法>>>\n{}".format(method))
         if data is not None:
             logger.info("接口请求的data参数>>>\n{}".format(json.dumps(data, indent=2)))
