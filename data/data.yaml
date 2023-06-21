@@ -52,6 +52,12 @@ heroes_name_attribute:
     - 法师
 
 mobile_belong: {shouji: 13456755448, appkey: 0c818521d38759e1}
+
+mobile_belong_dynamic:
+  params: { shouji: 13456755448, appkey: 0c818521d38759e1 }
+  title: 测试手机号归属地title-动态
+  story: 测试手机号归属地story-动态
+
 mobile_belong_post:
   # 手机号，appkey
   - [ 13456755448, 0c818521d38759e1 ]
