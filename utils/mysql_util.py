@@ -28,11 +28,23 @@ class MysqlDb:
         self.cur.close()
         self.conn.close()
 
-    def select_db(self, sql):
+    # 查询一条
+    def select_db_one(self, sql):
         logger.info(f'执行sql：{sql}')
         self.cur.execute(sql)
         # 获取数据
-        return self.cur.fetchall()
+        result = self.cur.fetchone()
+        logger.info(f'sql执行结果：{result}')
+        return result
+
+    # 查询多条
+    def select_db_all(self, sql):
+        logger.info(f'执行sql：{sql}')
+        self.cur.execute(sql)
+        # 获取数据
+        result = self.cur.fetchone()
+        logger.info(f'sql执行结果：{result}')
+        return result
 
     def execute_db(self, sql):
         try:
@@ -43,7 +55,10 @@ class MysqlDb:
             logger.info("执行sql出错了".format(e))
 
 
+db = MysqlDb()
+
+
 if __name__ == '__main__':
     db = MysqlDb()
-    result = db.select_db("select code from users_verifycode where mobile = '13066807785' order by id desc limit 1")
-    print(result)
+    result = db.select_db_one("select code from users_verifycode where mobile = '13066807786' order by id desc limit 1;")
+    print(result["code"])
