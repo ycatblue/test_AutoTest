@@ -27,3 +27,20 @@ def delete_code(mobile):
     sql = "delete from users_verifycode where mobile = '%s';" % mobile
     result = db.execute_db(sql)
     logger.info(f'sql执行结果：{result}')
+
+
+# 查询 user id
+def user_id(mobile):
+    sql = "select * from users_userprofile where mobile = '%s';" % mobile
+    result = db.select_db_one(sql)
+    logger.info(f'sql执行结果：{result}')
+    return result['id']
+
+
+def get_shop_cart_num(username, good_id):
+    # 查询UID
+    id = user_id(username)
+    sql = "select nums from trade_shoppingcart where user_id = %d and goods_id = %d;" \
+          % (id, good_id)
+    result = db.select_db_one(sql)
+    return result['nums']

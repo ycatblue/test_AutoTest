@@ -74,3 +74,17 @@ test_register: { mobile: 13066807785 }
 user_login:
   # 手机号， 密码
   - [ 13066807786, 123456 ]
+
+user_login_new:
+  - url: /login/
+    method: POST
+    data: { username: 13066807786,password: 123456 }
+    validate:
+      - eq: [ $.success, true ]
+      - ne: [ $.body.token, null]
+
+login_fixture:
+  mobile: 13066807786
+  password: 123456
+
+shopping_cart: { goods: 6, nums: 1 }
