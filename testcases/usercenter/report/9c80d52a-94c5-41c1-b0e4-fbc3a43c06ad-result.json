@@ -1,0 +1,1 @@
+{"name": "加购物车测试用例", "status": "passed", "parameters": [{"name": "username", "value": "13066807786"}, {"name": "password", "value": "123456"}], "start": 1687440720191, "stop": 1687441088096, "uuid": "bcd53c23-89ba-4b8e-9731-506018b45c37", "testCaseId": "6732b5a4ef5cebf11d6a36876a07be7c", "fullName": "testcases.usercenter.test_user.TestUser#test_shopping_cart"}

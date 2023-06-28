@@ -1,0 +1,880 @@
+[2023-06-25 13:08:36,460][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 13:08:36,460][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 13:08:36,460][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 13:08:36,829][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyNzQ1MTUsImVtYWlsIjpudWxsfQ.i85E7LJ34LJy9jv23QUYYDYUE-DtSmMXvsngIJYlcoo"}
+[2023-06-25 13:12:17,770][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 13:12:17,770][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 13:12:17,770][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 13:12:18,400][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyNzQ3MzYsImVtYWlsIjpudWxsfQ.bWCcmVwtl09CnlCHXdBkBQBmWAMWLn1eGQ8ai0R2L_k"}
+[2023-06-25 13:12:26,390][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 13:12:26,390][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 13:12:26,390][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 13:12:26,390][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyNzQ3MzYsImVtYWlsIjpudWxsfQ.bWCcmVwtl09CnlCHXdBkBQBmWAMWLn1eGQ8ai0R2L_k"
+}
+[2023-06-25 13:12:26,479][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 10, "goods": 6}
+[2023-06-25 13:12:26,481][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 13:12:26,520][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 13:12:26,520][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 13:12:26,520][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 13:12:26,550][mysql_util.py 37][INFO]: sql执行结果：{'nums': 10}
+[2023-06-25 18:50:30,367][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 18:50:30,487][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 18:50:30,487][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 18:50:30,487][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:30,487][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 18:50:30,623][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 18:50:30,624][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 18:50:30,651][mysql_util.py 37][INFO]: sql执行结果：{'code': '8916'}
+[2023-06-25 18:50:30,651][conftest.py 14][INFO]: sql执行结果：{'code': '8916'}
+[2023-06-25 18:50:30,651][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 18:50:30,651][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:30,651][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "8916",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 18:50:30,805][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0ODYsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgyOTUwMzAsImVtYWlsIjpudWxsfQ.BVqiK1XpCi8Y27WjozU5q2gfRo3JLdPM9Cdj_6hwFyI", "name": "13066807785"}
+[2023-06-25 18:50:30,805][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 18:50:30,936][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 18:50:30,940][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 18:50:30,940][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:30,940][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 18:50:31,085][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTUwMzAsImVtYWlsIjpudWxsfQ.IgImHi2qUbVC2YUiCF1crh5wpLzZjwb-5mp3GOKqy0c"}
+[2023-06-25 18:50:31,098][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 18:50:31,098][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:31,098][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 18:50:31,246][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTUwMzEsImVtYWlsIjpudWxsfQ.MaTgO4mwp8up50nQxZGABRrrMlaS9CT23YIykhUWg3Y"}
+[2023-06-25 18:50:31,249][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 18:50:31,250][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:31,250][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 18:50:31,250][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTUwMzEsImVtYWlsIjpudWxsfQ.MaTgO4mwp8up50nQxZGABRrrMlaS9CT23YIykhUWg3Y"
+}
+[2023-06-25 18:50:31,324][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 11, "goods": 6}
+[2023-06-25 18:50:31,324][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 18:50:31,363][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:50:31,363][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:50:31,363][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 18:50:31,392][mysql_util.py 37][INFO]: sql执行结果：{'nums': 11}
+[2023-06-25 18:50:31,401][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 18:50:31,401][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:31,401][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 18:50:31,541][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTUwMzEsImVtYWlsIjpudWxsfQ.MaTgO4mwp8up50nQxZGABRrrMlaS9CT23YIykhUWg3Y"}
+[2023-06-25 18:50:31,545][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 18:50:31,545][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:50:31,545][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 18:50:31,545][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTUwMzEsImVtYWlsIjpudWxsfQ.MaTgO4mwp8up50nQxZGABRrrMlaS9CT23YIykhUWg3Y"
+}
+[2023-06-25 18:50:31,630][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 12, "goods": 6}
+[2023-06-25 18:50:31,630][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 18:50:31,671][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:50:31,671][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:50:31,671][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 18:50:31,707][mysql_util.py 37][INFO]: sql执行结果：{'nums': 12}
+[2023-06-25 18:59:29,908][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 18:59:30,020][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 18:59:30,020][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 18:59:30,020][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:59:30,020][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 18:59:30,115][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 18:59:30,115][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 18:59:30,141][mysql_util.py 37][INFO]: sql执行结果：{'code': '1092'}
+[2023-06-25 18:59:30,141][conftest.py 14][INFO]: sql执行结果：{'code': '1092'}
+[2023-06-25 18:59:30,142][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 18:59:30,142][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:59:30,142][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "1092",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 18:59:30,294][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0ODcsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgyOTU1NzAsImVtYWlsIjpudWxsfQ.ChQq5SJnspNVGFDEMrjhIvhmqdC8IDOh62ccAwRbbvY", "name": "13066807785"}
+[2023-06-25 18:59:30,295][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 18:59:30,418][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 18:59:30,422][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 18:59:30,422][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:59:30,422][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 18:59:30,568][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU1NzAsImVtYWlsIjpudWxsfQ.Sa-eDw4ICzrvensyuqZe4-TETH37OFCKsTZvOfph2Lo"}
+[2023-06-25 18:59:30,581][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 18:59:30,581][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:59:30,581][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 18:59:30,735][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU1NzAsImVtYWlsIjpudWxsfQ.Sa-eDw4ICzrvensyuqZe4-TETH37OFCKsTZvOfph2Lo"}
+[2023-06-25 18:59:30,739][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 18:59:30,739][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:59:30,739][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 18:59:30,739][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU1NzAsImVtYWlsIjpudWxsfQ.Sa-eDw4ICzrvensyuqZe4-TETH37OFCKsTZvOfph2Lo"
+}
+[2023-06-25 18:59:30,811][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 13, "goods": 6}
+[2023-06-25 18:59:30,811][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 18:59:30,850][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:59:30,850][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:59:30,850][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 18:59:30,877][mysql_util.py 37][INFO]: sql执行结果：{'nums': 13}
+[2023-06-25 18:59:30,885][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 18:59:30,885][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 18:59:30,885][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 18:59:30,885][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU1NzAsImVtYWlsIjpudWxsfQ.Sa-eDw4ICzrvensyuqZe4-TETH37OFCKsTZvOfph2Lo"
+}
+[2023-06-25 18:59:30,962][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 14, "goods": 6}
+[2023-06-25 18:59:30,963][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 18:59:31,003][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:59:31,003][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 18:59:31,003][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 18:59:31,031][mysql_util.py 37][INFO]: sql执行结果：{'nums': 14}
+[2023-06-25 19:00:01,888][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 19:00:01,992][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 19:00:01,992][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 19:00:01,992][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 19:00:01,992][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 19:00:02,090][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 19:00:02,091][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 19:00:02,116][mysql_util.py 37][INFO]: sql执行结果：{'code': '9112'}
+[2023-06-25 19:00:02,116][conftest.py 14][INFO]: sql执行结果：{'code': '9112'}
+[2023-06-25 19:00:02,116][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 19:00:02,116][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 19:00:02,116][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "9112",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 19:00:02,280][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0ODgsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgyOTU2MDIsImVtYWlsIjpudWxsfQ.D-Te_mtKq_JdTnuDtv80FYuhaJbChxpbPtZjhD9MuwY", "name": "13066807785"}
+[2023-06-25 19:00:02,280][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 19:00:02,411][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 19:00:02,415][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 19:00:02,415][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 19:00:02,415][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 19:00:02,559][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU2MDIsImVtYWlsIjpudWxsfQ.22H3Hn17R2dLGKUpq-12b9Afd8QOeBQtqNMELwU2GsU"}
+[2023-06-25 19:00:02,571][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 19:00:02,571][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 19:00:02,571][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 19:00:02,716][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU2MDIsImVtYWlsIjpudWxsfQ.22H3Hn17R2dLGKUpq-12b9Afd8QOeBQtqNMELwU2GsU"}
+[2023-06-25 19:00:02,721][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 19:00:02,721][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 19:00:02,721][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 19:00:02,721][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU2MDIsImVtYWlsIjpudWxsfQ.22H3Hn17R2dLGKUpq-12b9Afd8QOeBQtqNMELwU2GsU"
+}
+[2023-06-25 19:00:02,799][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 15, "goods": 6}
+[2023-06-25 19:00:02,800][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 19:00:02,841][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 19:00:02,841][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 19:00:02,842][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 19:00:02,871][mysql_util.py 37][INFO]: sql执行结果：{'nums': 15}
+[2023-06-25 19:00:02,885][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 19:00:02,885][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 19:00:02,885][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 19:00:02,885][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgyOTU2MDIsImVtYWlsIjpudWxsfQ.22H3Hn17R2dLGKUpq-12b9Afd8QOeBQtqNMELwU2GsU"
+}
+[2023-06-25 19:00:02,956][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 16, "goods": 6}
+[2023-06-25 19:00:02,957][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 19:00:02,999][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 19:00:02,999][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 19:00:02,999][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 19:00:03,028][mysql_util.py 37][INFO]: sql执行结果：{'nums': 16}
+[2023-06-25 21:57:48,147][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 21:57:48,264][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 21:57:48,264][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 21:57:48,265][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:57:48,265][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 21:57:48,409][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 21:57:48,409][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 21:57:48,436][mysql_util.py 37][INFO]: sql执行结果：{'code': '0003'}
+[2023-06-25 21:57:48,436][conftest.py 14][INFO]: sql执行结果：{'code': '0003'}
+[2023-06-25 21:57:48,436][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 21:57:48,436][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:57:48,436][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "0003",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 21:57:48,583][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0OTUsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgzMDYyNjgsImVtYWlsIjpudWxsfQ.0MHnJ9Bkbjp2kzKnJ7ylfblX8jmmPIowa4whcz7KjeI", "name": "13066807785"}
+[2023-06-25 21:57:48,583][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 21:57:48,721][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 21:57:48,726][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 21:57:48,726][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:57:48,726][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 21:57:48,869][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDYyNjgsImVtYWlsIjpudWxsfQ.fYSAKTdbEco9Y0y4w5sNHU9Uy9bg3BRqBkcwhYPYb7E"}
+[2023-06-25 21:57:48,886][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 21:57:48,886][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:57:48,886][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 21:57:49,044][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDYyNjgsImVtYWlsIjpudWxsfQ.fYSAKTdbEco9Y0y4w5sNHU9Uy9bg3BRqBkcwhYPYb7E"}
+[2023-06-25 21:57:49,055][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 21:57:49,055][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:57:49,055][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 21:57:49,055][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDYyNjgsImVtYWlsIjpudWxsfQ.fYSAKTdbEco9Y0y4w5sNHU9Uy9bg3BRqBkcwhYPYb7E"
+}
+[2023-06-25 21:57:49,149][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 17, "goods": 6}
+[2023-06-25 21:57:49,150][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 21:57:49,188][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 21:57:49,189][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 21:57:49,189][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 21:57:49,215][mysql_util.py 37][INFO]: sql执行结果：{'nums': 17}
+[2023-06-25 21:57:49,222][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 21:57:49,222][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:57:49,222][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 21:57:49,223][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDYyNjgsImVtYWlsIjpudWxsfQ.fYSAKTdbEco9Y0y4w5sNHU9Uy9bg3BRqBkcwhYPYb7E"
+}
+[2023-06-25 21:57:49,293][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 18, "goods": 6}
+[2023-06-25 21:57:49,293][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 21:57:49,331][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 21:57:49,331][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 21:57:49,331][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 21:57:49,357][mysql_util.py 37][INFO]: sql执行结果：{'nums': 18}
+[2023-06-25 21:58:17,572][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 21:58:17,572][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:58:17,572][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 21:58:17,723][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDYyOTcsImVtYWlsIjpudWxsfQ.AgIY0jPLrdF-CJHQvBwi-uAVBfXpoCxn_ueHygBJKZQ"}
+[2023-06-25 21:58:17,730][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 21:58:17,730][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 21:58:17,730][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 21:58:17,730][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDYyOTcsImVtYWlsIjpudWxsfQ.AgIY0jPLrdF-CJHQvBwi-uAVBfXpoCxn_ueHygBJKZQ"
+}
+[2023-06-25 21:58:17,806][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 19, "goods": 6}
+[2023-06-25 21:58:17,806][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 21:58:17,846][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 21:58:17,846][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 21:58:17,846][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 21:58:17,874][mysql_util.py 37][INFO]: sql执行结果：{'nums': 19}
+[2023-06-25 22:01:40,764][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 22:01:40,880][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 22:01:40,880][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 22:01:40,881][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:01:40,881][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 22:01:40,978][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 22:01:40,979][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 22:01:41,005][mysql_util.py 37][INFO]: sql执行结果：{'code': '5811'}
+[2023-06-25 22:01:41,006][conftest.py 14][INFO]: sql执行结果：{'code': '5811'}
+[2023-06-25 22:01:41,006][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 22:01:41,006][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:01:41,007][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "5811",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 22:01:41,148][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0OTYsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgzMDY1MDAsImVtYWlsIjpudWxsfQ.V-F5yMNKhsRJeAX8W0tuRqrrEcA4BJkdi_cvIIH2W6w", "name": "13066807785"}
+[2023-06-25 22:01:41,148][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 22:01:41,260][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 22:01:41,264][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:01:41,264][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:01:41,264][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:01:41,408][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY1MDEsImVtYWlsIjpudWxsfQ.c8qhpWmKaNfkylLgrg_AxUanxYV02bjEAF0GCPH6p1g"}
+[2023-06-25 22:01:41,415][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:01:41,415][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:01:41,415][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:01:41,556][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY1MDEsImVtYWlsIjpudWxsfQ.c8qhpWmKaNfkylLgrg_AxUanxYV02bjEAF0GCPH6p1g"}
+[2023-06-25 22:01:41,564][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:01:41,564][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:01:41,564][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:01:41,564][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY1MDEsImVtYWlsIjpudWxsfQ.c8qhpWmKaNfkylLgrg_AxUanxYV02bjEAF0GCPH6p1g"
+}
+[2023-06-25 22:01:41,635][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 20, "goods": 6}
+[2023-06-25 22:01:41,636][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:01:41,671][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:01:41,672][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:01:41,672][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:01:41,696][mysql_util.py 37][INFO]: sql执行结果：{'nums': 20}
+[2023-06-25 22:01:41,704][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:01:41,704][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:01:41,704][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:01:41,704][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY1MDEsImVtYWlsIjpudWxsfQ.c8qhpWmKaNfkylLgrg_AxUanxYV02bjEAF0GCPH6p1g"
+}
+[2023-06-25 22:01:41,784][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 21, "goods": 6}
+[2023-06-25 22:01:41,785][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:01:41,824][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:01:41,825][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:01:41,825][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:01:41,849][mysql_util.py 37][INFO]: sql执行结果：{'nums': 21}
+[2023-06-25 22:06:58,894][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 22:06:58,999][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 22:06:58,999][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 22:06:58,999][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:06:58,999][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 22:06:59,094][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 22:06:59,094][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 22:06:59,124][mysql_util.py 37][INFO]: sql执行结果：{'code': '2856'}
+[2023-06-25 22:06:59,124][conftest.py 14][INFO]: sql执行结果：{'code': '2856'}
+[2023-06-25 22:06:59,124][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 22:06:59,124][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:06:59,124][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "2856",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 22:06:59,272][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0OTcsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgzMDY4MTgsImVtYWlsIjpudWxsfQ.grxCEvLTmGc3mjG9GCxNF7mXyxtG3j1sAyt_Xqy3AVM", "name": "13066807785"}
+[2023-06-25 22:06:59,272][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 22:06:59,405][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 22:06:59,409][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:06:59,409][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:06:59,409][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:06:59,550][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY4MTksImVtYWlsIjpudWxsfQ.3IYGlBE36Nxf9l5QKCjDKHzml3aX-toHDH_B7aiE8NU"}
+[2023-06-25 22:06:59,572][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:06:59,572][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:06:59,572][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:06:59,724][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY4MTksImVtYWlsIjpudWxsfQ.3IYGlBE36Nxf9l5QKCjDKHzml3aX-toHDH_B7aiE8NU"}
+[2023-06-25 22:06:59,729][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:06:59,729][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:06:59,729][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:06:59,729][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY4MTksImVtYWlsIjpudWxsfQ.3IYGlBE36Nxf9l5QKCjDKHzml3aX-toHDH_B7aiE8NU"
+}
+[2023-06-25 22:06:59,814][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 22, "goods": 6}
+[2023-06-25 22:06:59,814][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:06:59,851][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:06:59,852][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:06:59,852][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:06:59,878][mysql_util.py 37][INFO]: sql执行结果：{'nums': 22}
+[2023-06-25 22:06:59,888][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:06:59,888][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:06:59,888][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:06:59,888][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDY4MTksImVtYWlsIjpudWxsfQ.3IYGlBE36Nxf9l5QKCjDKHzml3aX-toHDH_B7aiE8NU"
+}
+[2023-06-25 22:06:59,970][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 23, "goods": 6}
+[2023-06-25 22:06:59,970][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:07:00,008][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:07:00,009][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:07:00,009][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:07:00,034][mysql_util.py 37][INFO]: sql执行结果：{'nums': 23}
+[2023-06-25 22:10:16,346][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 22:10:16,454][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 22:10:16,454][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 22:10:16,454][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:10:16,454][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 22:10:16,578][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 22:10:16,578][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 22:10:16,604][mysql_util.py 37][INFO]: sql执行结果：{'code': '1629'}
+[2023-06-25 22:10:16,604][conftest.py 14][INFO]: sql执行结果：{'code': '1629'}
+[2023-06-25 22:10:16,604][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 22:10:16,604][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:10:16,604][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "1629",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 22:10:16,742][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0OTgsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgzMDcwMTYsImVtYWlsIjpudWxsfQ.0TpRejKRt-Z5D-G9p277ZVevfrl7u2Z04K-VwUj2gak", "name": "13066807785"}
+[2023-06-25 22:10:16,742][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 22:10:16,863][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 22:10:16,870][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:10:16,870][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:10:16,871][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:10:17,009][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDcwMTYsImVtYWlsIjpudWxsfQ.NyStyRd8gC0abmZcn6O7DJO32VZZ51TdVWpZQ6Vpxzg"}
+[2023-06-25 22:10:17,019][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:10:17,020][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:10:17,020][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:10:17,157][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDcwMTYsImVtYWlsIjpudWxsfQ.NyStyRd8gC0abmZcn6O7DJO32VZZ51TdVWpZQ6Vpxzg"}
+[2023-06-25 22:10:17,166][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:10:17,166][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:10:17,166][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:10:17,166][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDcwMTYsImVtYWlsIjpudWxsfQ.NyStyRd8gC0abmZcn6O7DJO32VZZ51TdVWpZQ6Vpxzg"
+}
+[2023-06-25 22:10:17,246][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 24, "goods": 6}
+[2023-06-25 22:10:17,246][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:10:17,283][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:10:17,283][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:10:17,283][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:10:17,308][mysql_util.py 37][INFO]: sql执行结果：{'nums': 24}
+[2023-06-25 22:10:17,316][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:10:17,316][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:10:17,316][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:10:17,316][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDcwMTYsImVtYWlsIjpudWxsfQ.NyStyRd8gC0abmZcn6O7DJO32VZZ51TdVWpZQ6Vpxzg"
+}
+[2023-06-25 22:10:17,386][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 25, "goods": 6}
+[2023-06-25 22:10:17,386][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:10:17,424][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:10:17,425][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:10:17,425][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:10:17,450][mysql_util.py 37][INFO]: sql执行结果：{'nums': 25}
+[2023-06-25 22:13:59,928][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,086][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,090][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,212][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,229][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,370][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,376][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,496][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,499][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,501][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,504][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,562][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,565][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,567][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,571][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,573][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,576][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,577][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,580][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,581][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,584][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,585][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,589][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,591][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,594][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,595][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,598][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,728][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,730][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,869][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,874][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:00,995][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:00,999][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:01,137][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:01,143][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:01,281][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:01,284][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:01,413][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:01,421][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:01,424][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:01,430][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:01,432][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-25 22:14:01,440][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/posts
+[2023-06-25 22:14:01,440][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:14:01,440][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-06-25 22:14:01,540][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:02,742][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:02,822][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:02,829][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:02,903][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:02,910][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,044][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,047][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,049][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,051][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,059][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,064][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,068][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,075][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,078][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,083][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,086][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,091][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,092][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,095][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,097][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,100][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,103][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:14:03,106][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-25 22:14:03,164][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-25 22:15:46,556][mysql_util.py 33][INFO]: 执行sql：select count(1) as banner_num from goods_banner;
+[2023-06-25 22:15:46,582][mysql_util.py 37][INFO]: sql执行结果：{'banner_num': 4}
+[2023-06-25 22:15:46,583][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/banners/
+[2023-06-25 22:15:46,583][rest_client.py 50][INFO]: 接口请求的方法>>>
+GET
+[2023-06-25 22:15:46,674][response_util.py 15][INFO]: 接口的返回内容>>>:[{"id": 1824, "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg", "index": 1, "add_time": "2022-10-27T08:33:00", "goods": 15}, {"id": 1821, "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg", "index": 2, "add_time": "2022-08-23T00:34:00", "goods": 82}, {"id": 1820, "image": "http://admin.5istudy.online/media/banner/banner1.jpg", "index": 3, "add_time": "2021-11-26T13:22:00", "goods": 4}, {"id": 1822, "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png", "index": 3, "add_time": "2022-09-22T10:53:00", "goods": 83}]
+[2023-06-25 22:15:46,691][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:15:46,692][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:46,692][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:15:46,834][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nooIWCadbxKDpfzmvXdC9MgHqhD-r1H6b4djGsTereI"}
+[2023-06-25 22:15:46,842][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:15:46,843][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:46,843][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:15:46,843][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nooIWCadbxKDpfzmvXdC9MgHqhD-r1H6b4djGsTereI"
+}
+[2023-06-25 22:15:46,918][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 26, "goods": 6}
+[2023-06-25 22:15:46,919][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:15:46,956][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:46,958][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:46,959][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:15:46,986][mysql_util.py 37][INFO]: sql执行结果：{'nums': 26}
+[2023-06-25 22:15:47,001][mysql_util.py 51][INFO]: 执行sql：delete from users_verifycode where mobile = '13066807785';
+[2023-06-25 22:15:47,113][conftest.py 29][INFO]: sql执行结果：None
+[2023-06-25 22:15:47,114][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/code/
+[2023-06-25 22:15:47,115][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:47,116][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 13066807785
+}
+[2023-06-25 22:15:47,206][response_util.py 15][INFO]: 接口的返回内容>>>:{"mobile": "13066807785"}
+[2023-06-25 22:15:47,207][mysql_util.py 33][INFO]: 执行sql：select code from users_verifycode where mobile = '13066807785' order by id desc limit 1;
+[2023-06-25 22:15:47,237][mysql_util.py 37][INFO]: sql执行结果：{'code': '5513'}
+[2023-06-25 22:15:47,238][conftest.py 14][INFO]: sql执行结果：{'code': '5513'}
+[2023-06-25 22:15:47,238][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/users/
+[2023-06-25 22:15:47,238][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:47,238][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "code": "5513",
+  "password": "123456",
+  "username": "13066807785"
+}
+[2023-06-25 22:15:47,383][response_util.py 15][INFO]: 接口的返回内容>>>:{"username": "13066807785", "mobile": "13066807785", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA1MDAsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODUiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nYRp2akwAv9oTxh-V1sU15V6UBy6ZxVlqjwNqx76JSY", "name": "13066807785"}
+[2023-06-25 22:15:47,386][mysql_util.py 51][INFO]: 执行sql：delete from users_userprofile where mobile = '13066807785';
+[2023-06-25 22:15:47,512][conftest.py 22][INFO]: sql执行结果：None
+[2023-06-25 22:15:47,521][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/login/
+[2023-06-25 22:15:47,522][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:47,523][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "username": 13066807786,
+  "password": 123456
+}
+[2023-06-25 22:15:47,692][response_util.py 15][INFO]: 接口的返回内容>>>:{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDcsImVtYWlsIjpudWxsfQ.mf1y_q_wL9YqaVUqelMLl3AI_Y7o9WQOaQjSWSNgLXg"}
+[2023-06-25 22:15:47,710][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:15:47,711][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:47,712][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:15:47,712][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nooIWCadbxKDpfzmvXdC9MgHqhD-r1H6b4djGsTereI"
+}
+[2023-06-25 22:15:47,788][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 27, "goods": 6}
+[2023-06-25 22:15:47,789][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:15:47,825][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:47,826][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:47,827][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:15:47,851][mysql_util.py 37][INFO]: sql执行结果：{'nums': 27}
+[2023-06-25 22:15:47,864][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:15:47,865][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:47,865][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:15:47,865][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nooIWCadbxKDpfzmvXdC9MgHqhD-r1H6b4djGsTereI"
+}
+[2023-06-25 22:15:47,960][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 28, "goods": 6}
+[2023-06-25 22:15:47,961][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:15:47,997][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:47,998][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:48,000][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:15:48,024][mysql_util.py 37][INFO]: sql执行结果：{'nums': 28}
+[2023-06-25 22:15:48,046][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[2023-06-25 22:15:48,047][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-25 22:15:48,047][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[2023-06-25 22:15:48,047][rest_client.py 58][INFO]: 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nooIWCadbxKDpfzmvXdC9MgHqhD-r1H6b4djGsTereI"
+}
+[2023-06-25 22:15:48,120][response_util.py 15][INFO]: 接口的返回内容>>>:{"nums": 29, "goods": 6}
+[2023-06-25 22:15:48,122][mysql_util.py 33][INFO]: 执行sql：select * from users_userprofile where mobile = '13066807786';
+[2023-06-25 22:15:48,164][mysql_util.py 37][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:48,165][conftest.py 36][INFO]: sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[2023-06-25 22:15:48,166][mysql_util.py 33][INFO]: 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[2023-06-25 22:15:48,199][mysql_util.py 37][INFO]: sql执行结果：{'nums': 29}

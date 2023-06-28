@@ -1,0 +1,10 @@
+INFO     log:rest_client.py:49 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+INFO     log:rest_client.py:50 接口请求的方法>>>
+POST
+INFO     log:rest_client.py:54 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+INFO     log:response_util.py:18 接口状态码不是2开头，请检查{"detail": "身份认证信息未提供。"}

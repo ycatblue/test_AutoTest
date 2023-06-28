@@ -1,0 +1,163 @@
+[2023-06-16 11:32:52,031][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:32:52,044][rest_client.py 26][INFO]: 接口请求的地址>>>http://api.binstd.com/posts
+[2023-06-16 11:32:52,044][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:32:52,045][rest_client.py 28][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:34:55,921][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:34:55,924][rest_client.py 26][INFO]: 接口请求的地址>>>http://api.binstd.com/posts
+[2023-06-16 11:34:55,924][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:34:55,925][rest_client.py 28][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:35:01,107][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:35:01,119][rest_client.py 26][INFO]: 接口请求的地址>>>http://api.binstd.com/posts
+[2023-06-16 11:36:51,591][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:36:51,594][rest_client.py 26][INFO]: 接口请求的地址>>>http://api.binstd.com/posts
+[2023-06-16 11:36:51,594][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:36:51,594][rest_client.py 28][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:38:29,357][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:38:29,361][rest_client.py 26][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:38:29,361][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:38:29,361][rest_client.py 28][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:39:30,160][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:39:30,172][rest_client.py 26][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:40:17,109][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:41:08,872][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:41:08,875][rest_client.py 26][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:41:08,876][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:41:08,876][rest_client.py 28][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:41:09,364][test_post.py 18][INFO]: 用例执行完毕
+[2023-06-16 11:41:36,329][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:41:36,332][rest_client.py 26][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:41:36,332][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:41:36,332][rest_client.py 28][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:42:57,084][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:42:57,087][rest_client.py 26][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:42:57,087][rest_client.py 27][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:42:57,087][rest_client.py 28][INFO]: 接口请求的json参数>>>{'title': 'foo', 'body': 'bar', 'userId': 1}
+[2023-06-16 11:44:29,547][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:44:29,551][rest_client.py 28][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:44:29,551][rest_client.py 29][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:44:29,551][rest_client.py 30][INFO]: 接口请求的json参数>>>{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-06-16 11:45:13,457][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:45:13,460][rest_client.py 28][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:45:13,460][rest_client.py 29][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:45:13,460][rest_client.py 30][INFO]: 接口请求的json参数>>>{}
+
+[2023-06-16 11:45:36,389][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 11:45:36,392][rest_client.py 28][INFO]: 接口请求的地址>>>http://jsonplaceholder.typicode.com/posts
+[2023-06-16 11:45:36,392][rest_client.py 29][INFO]: 接口请求的地址>>>POST
+[2023-06-16 11:45:36,392][rest_client.py 30][INFO]: 接口请求的json参数>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-06-16 14:50:47,332][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 14:50:47,335][rest_client.py 38][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/posts
+[2023-06-16 14:50:47,335][rest_client.py 39][INFO]: 接口请求的方法>>>
+POST
+[2023-06-16 14:50:47,335][rest_client.py 43][INFO]: 接口请求的json参数>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-06-16 14:50:47,833][test_post.py 17][INFO]: 用例执行完毕
+[2023-06-16 14:52:02,679][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 14:52:02,682][rest_client.py 38][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/posts
+[2023-06-16 14:52:02,682][rest_client.py 39][INFO]: 接口请求的方法>>>
+POST
+[2023-06-16 14:52:02,683][rest_client.py 43][INFO]: 接口请求的json参数>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-06-16 14:52:03,174][test_post.py 17][INFO]: 用例执行完毕
+[2023-06-16 14:55:23,368][rest_client.py 50][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/shouji/query
+[2023-06-16 14:55:23,369][rest_client.py 51][INFO]: 接口请求的方法>>>
+GET
+[2023-06-16 14:55:23,369][rest_client.py 57][INFO]: 接口请求的params参数>>>
+{
+  "shouji": 13456755448,
+  "appkey": "0c818521d38759e1"
+}
+[2023-06-16 14:59:54,244][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-16 14:59:54,245][test_post.py 13][INFO]: 开始执行test_post方法
+[2023-06-16 14:59:54,248][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/posts
+[2023-06-16 14:59:54,248][rest_client.py 50][INFO]: 接口请求的方法>>>
+POST
+[2023-06-16 14:59:54,248][rest_client.py 54][INFO]: 接口请求的json参数>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-06-16 14:59:54,720][test_post.py 17][INFO]: 用例执行完毕
+[2023-06-16 14:59:54,721][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-16 15:46:01,846][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-16 15:46:01,850][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/shouji/query
+[2023-06-16 15:46:01,850][rest_client.py 50][INFO]: 接口请求的方法>>>
+GET
+[2023-06-16 15:46:01,850][rest_client.py 56][INFO]: 接口请求的params参数>>>
+{
+  "shouji": 13456755448,
+  "appkey": "0c818521d38759e1"
+}
+[2023-06-16 15:46:02,022][api.py 13][INFO]: 接口的返回内容>>>:{"status": 0, "msg": "ok", "result": {"shouji": "13456755448", "province": "\u6d59\u6c5f", "city": "\u676d\u5dde", "company": "\u4e2d\u56fd\u79fb\u52a8", "cardtype": null, "areacode": "0571"}}
+[2023-06-16 15:46:02,026][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-16 15:47:42,892][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-16 15:47:42,896][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/shouji/query
+[2023-06-16 15:47:42,896][rest_client.py 50][INFO]: 接口请求的方法>>>
+GET
+[2023-06-16 15:47:42,896][rest_client.py 56][INFO]: 接口请求的params参数>>>
+{
+  "shouji": 13456755448,
+  "appkey": "0c818521d38759e1"
+}
+[2023-06-16 15:47:43,054][api.py 13][INFO]: 接口的返回内容>>>:{"status": 0, "msg": "ok", "result": {"shouji": "13456755448", "province": "浙江", "city": "杭州", "company": "中国移动", "cardtype": null, "areacode": "0571"}}
+[2023-06-16 15:47:43,055][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-16 16:00:50,442][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-16 16:00:50,446][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/shouji/query
+[2023-06-16 16:00:50,446][rest_client.py 50][INFO]: 接口请求的方法>>>
+GET
+[2023-06-16 16:00:50,446][rest_client.py 56][INFO]: 接口请求的params参数>>>
+{
+  "shouji": 13456755448,
+  "appkey": "0c818521d38759e1"
+}
+[2023-06-16 16:00:50,631][response_util.py 11][INFO]: 接口的返回内容>>>:{"status": 0, "msg": "ok", "result": {"shouji": "13456755448", "province": "浙江", "city": "杭州", "company": "中国移动", "cardtype": null, "areacode": "0571"}}
+[2023-06-16 16:00:50,633][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-16 16:17:21,212][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-16 16:17:21,216][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/shouji/query
+[2023-06-16 16:17:21,216][rest_client.py 50][INFO]: 接口请求的方法>>>
+GET
+[2023-06-16 16:17:21,216][rest_client.py 56][INFO]: 接口请求的params参数>>>
+{
+  "shouji": 13456755448,
+  "appkey": "0c818521d38759e1"
+}
+[2023-06-16 16:17:21,377][response_util.py 15][INFO]: 接口的返回内容>>>:{"status": 0, "msg": "ok", "result": {"shouji": "13456755448", "province": "浙江", "city": "杭州", "company": "中国移动", "cardtype": null, "areacode": "0571"}}
+[2023-06-16 16:17:21,432][conftest.py 14][INFO]: 测试用例执行完毕
+[2023-06-16 16:18:52,493][conftest.py 12][INFO]: 开始执行测试用例
+[2023-06-16 16:18:52,497][rest_client.py 49][INFO]: 接口请求的地址>>>
+http://jsonplaceholder.typicode.com/shouji/query
+[2023-06-16 16:18:52,497][rest_client.py 50][INFO]: 接口请求的方法>>>
+GET
+[2023-06-16 16:18:52,497][rest_client.py 56][INFO]: 接口请求的params参数>>>
+{
+  "shouji": 13456755448,
+  "appkey": "0c818521d38759e1"
+}
+[2023-06-16 16:18:52,648][response_util.py 15][INFO]: 接口的返回内容>>>:{"status": 0, "msg": "ok", "result": {"shouji": "13456755448", "province": "浙江", "city": "杭州", "company": "中国移动", "cardtype": null, "areacode": "0571"}}
+[2023-06-16 16:18:52,649][conftest.py 14][INFO]: 测试用例执行完毕

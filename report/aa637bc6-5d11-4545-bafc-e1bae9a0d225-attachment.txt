@@ -1,0 +1,19 @@
+[32mINFO    [0m log:rest_client.py:49 接口请求的地址>>>
+http://admin.5istudy.online/shopcarts/
+[32mINFO    [0m log:rest_client.py:50 接口请求的方法>>>
+POST
+[32mINFO    [0m log:rest_client.py:54 接口请求的json参数>>>
+{
+  "goods": 6,
+  "nums": 1
+}
+[32mINFO    [0m log:rest_client.py:58 接口请求的params参数>>>
+{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjA0MTIsInVzZXJuYW1lIjoiMTMwNjY4MDc3ODYiLCJleHAiOjE2ODgzMDczNDYsImVtYWlsIjpudWxsfQ.nooIWCadbxKDpfzmvXdC9MgHqhD-r1H6b4djGsTereI"
+}
+[32mINFO    [0m log:response_util.py:15 接口的返回内容>>>:{"nums": 29, "goods": 6}
+[32mINFO    [0m log:mysql_util.py:33 执行sql：select * from users_userprofile where mobile = '13066807786';
+[32mINFO    [0m log:mysql_util.py:37 sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[32mINFO    [0m log:conftest.py:36 sql执行结果：{'id': 220412, 'password': 'pbkdf2_sha256$100000$oWfZVcQQS1c3$JpZk/VWzxQHktMB8w0hOuvldk0SUC/2KhB7o8lyitFQ=', 'last_login': None, 'is_superuser': 0, 'username': '13066807786', 'first_name': '', 'last_name': '', 'is_staff': 0, 'is_active': 1, 'date_joined': datetime.datetime(2023, 6, 22, 19, 25, 56, 717610), 'name': None, 'birthday': None, 'mobile': '13066807786', 'gender': 'female', 'email': None}
+[32mINFO    [0m log:mysql_util.py:33 执行sql：select nums from trade_shoppingcart where user_id = 220412 and goods_id = 6;
+[32mINFO    [0m log:mysql_util.py:37 sql执行结果：{'nums': 29}
